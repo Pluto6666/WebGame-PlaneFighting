@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>My Web Game</title>
+<link rel="stylesheet" href="css/index.css" />
+<style>
+	
+html {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		background-image: url(img/bigbg.jpg);
+
+	}
+	.canvasbig {
+		position: absolute;
+		left: calc(50% - 260px);
+		top: calc(50% - 400px);
+		width: 520px;
+		height: 800px;
+		border-style:outset;
+		border-width:7px;
+		border-color: #483D8B;
+		border-radius: 5px;
+	}
+
+	.canvasdiv {
+		position: absolute;
+		cursor: pointer;
+		left: 160px;
+		top: 500px;
+		width: 200px;
+		height: 53px;
+		background-image: url(img/starting.png);
+	}
+
+	.none {
+		display: none;
+	}
+</style>
+
+</head>
+<body>
+
+
+<!--±³¾°ÒôÀÖÑ­»·²¥·Å-->
+<audio autoplay="autoplay" height="100" width="100" loop=-1>
+  <source src="MP3/bg_music.mp3" type="audio/mp3" />
+</audio>
+<!--canvas»­²¼-->
+<div class="canvasbig">
+	<div class="canvasdiv"></div>
+	<canvas width="520" height="800" id="canvas1"></canvas>
+</div>
+<audio src="MP3/win.mp3" id="winner" controls   hidden="true">
+<audio src="MP3/boom.mp3"    id="boom" controls    hidden="true">
+<audio src="MP3/lose.mp3"    id="lose" controls    hidden="true">
+<audio src="MP3/boss.mp3"  id="boss"  controls  hidden="true">
+<script src="js/index.js"></script>
+<div style="text-align:center;">
+
+</div>
+</body>
+</html>
